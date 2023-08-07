@@ -11,13 +11,15 @@ function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="main">
-          <div className="gradient" />
-          <main className="app">
-            <Nav />
-            {children}
+        <Provider>
+          <div className="main">
+            <div className="gradient" />
+            <main className="app">
+              <Nav />
+              {children}
             </main>
-        </div>
+          </div>
+        </Provider>
       </body>
     </html>
   );
